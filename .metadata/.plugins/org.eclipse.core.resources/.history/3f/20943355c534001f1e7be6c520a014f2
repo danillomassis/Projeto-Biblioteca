@@ -1,0 +1,53 @@
+package projeto_biblioteca;
+
+import java.util.ArrayList;
+import java.util.Scanner;
+
+public class Main {
+
+	public static void main(String[] args) {
+		
+		Scanner sc = new Scanner(System.in);
+		
+		ArrayList<Livro> lista = new ArrayList<>();
+		
+		System.out.println("Você deseja cadastrar ou realizar uma consulta?");
+		System.out.println("[1] Cadastrar");
+		System.out.println("[2] Consultar");
+		int n = sc.nextInt();		
+		
+		if (n = 1) {
+			System.out.println("Quantos livros serão cadastrados?");
+			int n = sc.nextInt();
+			
+			for (int i=0; i<n; i++) {
+				
+				System.out.println("Título do Livro: ");
+				String titulo = sc.nextLine();
+				System.out.println("Autor do Livro: ");
+				String autor = sc.nextLine();
+				System.out.println("Ano da publicação: ");
+				Integer ano = sc.nextInt();
+				System.out.println("Código ISBN: ");
+				String isbn = sc.nextLine();
+				
+				Livro liv = new Livro(titulo, autor, i, isbn);
+				lista.add(liv);
+				
+				System.out.println("Livro cadastrado com Sucesso.");
+			} 
+				
+		}else {
+			System.out.println("Digite o nome do livro: ");
+			String nome = sc.nextLine();
+			if (nome ){ 
+				comparação /= nome 
+				System.out.println("Desculpe, esse livro não existe em nossa biblioteca!");
+			}
+		}
+		
+		
+		sc.close();
+	}
+
+}

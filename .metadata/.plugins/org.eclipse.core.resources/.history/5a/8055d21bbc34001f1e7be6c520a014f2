@@ -1,0 +1,17 @@
+package projeto_biblioteca;
+
+import java.util.ArrayList;
+
+public class Biblioteca {
+	
+	ArrayList<Livro> livros = new ArrayList<>();
+	
+	public void cadastrarLivro(Livro livro){
+		cadastrarLivro(livro);
+	}
+	
+	public void consultarLivro(String titulo) {
+		consultarLivro(titulo);
+	}
+
+}

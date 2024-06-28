@@ -1,0 +1,50 @@
+package projeto_biblioteca;
+
+public class Livro {
+	
+	private String titulo;
+	private String autor;
+	private int anoPublicacao;
+	private String codigoISBN;
+	
+	public Livro(String tituloLivro, String autorLivro, int anoPublicacao, String codigoISBN) {
+		super();
+		this.titulo = tituloLivro;
+		this.autor = autorLivro;
+		this.anoPublicacao = anoPublicacao;
+		this.codigoISBN = codigoISBN;
+	}
+
+	public String getTituloLivro() {
+		return titulo;
+	}
+
+	public void setTituloLivro(String tituloLivro) {
+		this.titulo = tituloLivro;
+	}
+
+	public String getAutorLivro() {
+		return autor;
+	}
+
+	public void setAutorLivro(String autorLivro) {
+		this.autor = autorLivro;
+	}
+
+	public int getAnoPublicacao() {
+		return anoPublicacao;
+	}
+
+	public void setAnoPublicacao(int anoPublicacao) {
+		this.anoPublicacao = anoPublicacao;
+	}
+
+	public String getCodigoISBN() {
+		return codigoISBN;
+	}
+
+	public void setCodigoISBN(String codigoISBN) {
+		this.codigoISBN = codigoISBN;
+	}
+	
+}
